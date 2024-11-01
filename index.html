@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impacto Zombie</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="assets/img/Icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container" id="pages">
+            <!-- Marca con logo de imagen y texto -->
+            <a class="navbar-brand" href=""><img src="assets/img/Icon.png">Impacto Zombie</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#pages">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#instructions">Instrucciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#credit">Créditos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="pages" class="container text-center">
+
+        <!-- Sección de Instrucciones -->
+        <div id="instructions" class="instructions">
+            <h5>Instrucciones del Juego:</h5>
+            <p>1. Haz clic en las imágenes que aparecen en la pantalla para eliminarlas.</p>
+            <p>2. Cada imagen eliminada incrementa tu puntaje. ¡Intenta eliminar tantas imágenes como puedas antes de que desaparezcan!</p>
+            <p>3. Presiona el botón "Iniciar Juego" para comenzar.</p>
+            <button id="startButton" class="btn btn-success"><a href="#canvas">Iniciar Juego</a></button>
+        </div>
+
+        <main id="gameContainer">
+            <div id="score">Puntaje: 0</div> <!-- Div para mostrar el puntaje -->
+            <canvas id="canvas"></canvas>
+        </main>
+
+        <footer id="credit">
+            <img src="assets/img/Logotipo.png" alt="Team Icono"> <!-- Cambia a la ruta de tu imagen -->
+            <p><strong>Créditos:</strong></p>
+            <p>Ceron Nieves Cristian Alexis</p>
+            <p>Angeles Garcia Karen</p>
+            <p>Godinez Mejia Sharon Yareli</p>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

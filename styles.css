@@ -1,0 +1,108 @@
+body {
+  background-color: #121212;
+  color: white;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.instructions {
+  background-color: #1c1c1c;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.instructions h5 {
+  font-size: 2rem; /* Tamaño de fuente para el título de instrucciones */
+}
+.instructions p {
+  font-size: 1.25rem; /* Tamaño de fuente para los párrafos */
+}
+
+#canvas {
+  border-radius: 80px;
+  background-color: #000000;
+  margin-bottom: 20px;
+
+  cursor: url('assets/img/martillo.png'), auto;
+}
+
+footer {
+  margin-top: 20px;
+  padding: 10px 0;
+  background-color: #1c1c1c;
+}
+
+#score {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2em;
+  font-weight: bold;
+  color: #FFD700; /* Dorado */
+  text-shadow: 2px 2px 0 #006400, /* Verde oscuro */
+               -2px 2px 0 #006400,
+               2px -2px 0 #006400,
+               -2px -2px 0 #006400,
+               0px 4px 4px rgba(0, 0, 0, 0.6); /* Sombra */
+  background-color: rgba(50, 50, 50, 0.5); /* Fondo semi-transparente */
+  padding: 10px 20px;
+  border: 3px solid #006400; /* Borde verde oscuro */
+  border-radius: 12px;
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Fuente tipo caricatura */
+}
+
+#gameContainer {
+  position: relative; /* Permite la posición absoluta de elementos internos */
+
+}
+
+#startButton a {
+  text-decoration: none;    /* Elimina subrayado del enlace */
+  color: inherit;           /* Hereda el color del botón */
+  outline: none;            /* Quita el borde de enfoque en el enlace */
+}
+
+/* Estilo del logo y título en la navbar */
+.navbar-brand img {
+  width: 50px; /* Ajusta el tamaño de la imagen */
+  height: auto;
+  margin-right: 10px; /* Espacio entre imagen y texto */
+}
+.navbar .navbar-brand {
+  font-size: 2.5em !important; /* Aumenta el tamaño y asegúrate que se aplique */
+  font-weight: bold;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #FFD700; /* Opcional: color dorado */
+  text-shadow: 1px 1px 2px #006400; /* Opcional: sombra de texto */
+}
+
+/* Estilos para el pie de página */
+#credit {
+  background-color: #212529;
+  color: #FFD700;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 1.2em;
+}
+
+#credit img {
+  width: 80px; /* Tamaño de la imagen */
+  height: auto;
+  margin-bottom: 10px; /* Espacio debajo de la imagen */
+}
+
+#credit p {
+  margin: 5px 0;
+  font-size: 1.1em;
+}
